@@ -7,6 +7,8 @@
 
 🎯 Modern webhook receiver and dashboard built on Cloudflare Workers + KV. Features real-time UI, export capabilities, and OPSEC-friendly on-premises deployment options. Perfect for red teams, penetration testing, and secure webhook management.
 
+![Main View](pics/pannel.png)
+
 ## Description
 
 A comprehensive webhook receiver and management panel designed for receiving, visualizing, searching, exporting, and deleting webhook payloads by project (optionally by `key`) using Cloudflare Workers + KV storage. Features Basic authentication for the panel and sensitive operations, making it ideal for security testing, development workflows, and operational security scenarios.
