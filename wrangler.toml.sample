@@ -1,0 +1,30 @@
+name = "webhook-panel"
+main = "src/index.ts"
+compatibility_date = "2024-08-06"
+workers_dev = true
+
+[[kv_namespaces]]
+binding = "WEBHOOKS"
+# Fill these after running KV namespace creation (see README/summary)
+id = "YOUR_KV_NAMESPACE_ID"
+preview_id = "YOUR_KV_PREVIEW_NAMESPACE_ID"
+
+[vars]
+# Optional allowlist of API keys (comma-separated). If empty, any api_key is accepted.
+ALLOWED_API_KEYS = ""
+# Retention for events in days (string, parsed at runtime)
+RETENTION_DAYS = "30"
+
+# Basic auth for panel and events API (change in production!)
+PANEL_USER = "admin"
+PANEL_PASS = "dan1t0"
+APP_NAME = "Webhook Panel"
+
+# Production routes (custom domain)
+# Uncomment and set your zone to deploy to a custom subdomain, e.g. wh.example.com
+# You need your DNS proxied through Cloudflare for this to work.
+#
+# routes = [
+#   { pattern = "wh.dominio.com/*", zone_name = "dominio.com" }
+# ]
+

@@ -1,0 +1,16 @@
+node_modules
+dist
+.wrangler
+wrangler.toml
+.DS_Store
+
+# Editor and IDE files
+.cursor/
+.vscode/
+.idea/
+
+# OS generated files
+Thumbs.db
+*.swp
+*.swo
+*~

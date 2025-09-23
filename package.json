@@ -1,0 +1,17 @@
+{
+  "name": "webhook-panel",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev --local",
+    "deploy": "wrangler deploy",
+    "types": "tsc --noEmit",
+    "check": "npm run types"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240729.0",
+    "typescript": "^5.5.4",
+    "wrangler": "^4.28.1"
+  }
+}
