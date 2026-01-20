@@ -1,8 +1,17 @@
+# Dependencies
 node_modules
+
+# Environment variables and secrets
+.env
+.dev.vars
+
+# Build output
 dist
+worker-sites-content-manifest.json
+
+# Cloudflare
 .wrangler
 wrangler.toml
-.DS_Store
 
 # Editor and IDE files
 .cursor/
@@ -10,6 +19,7 @@ wrangler.toml
 .idea/
 
 # OS generated files
+.DS_Store
 Thumbs.db
 *.swp
 *.swo
